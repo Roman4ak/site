@@ -1,0 +1,299 @@
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: Prosto One;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: inline-block;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gallery {
+  padding-top: 50px;
+}
+
+.gallery .container .goods {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px 40px;
+  padding-top: 60px;
+  background-color: #fff;
+  border: 2px solid gray;
+}
+
+.gallery .container .goods .goods_code {
+  position: absolute;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.447);
+  top: 10px;
+  right: 15px;
+}
+
+.gallery .container .goods .goods_img {
+  padding-bottom: 25px;
+}
+
+.gallery .container .goods .goods_img img {
+  width: 250px;
+  height: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.gallery .container .goods .goods_info .goods_sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery .container .goods .goods_info .goods_sale span {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #d54418;
+  padding: 5px 10px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.gallery .container .goods .goods_info h1 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  max-width: 350px;
+  font-weight: 200;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.766);
+  cursor: pointer;
+}
+
+.gallery .container .goods .goods_info h1:hover {
+  color: #d54418;
+}
+
+.gallery .container .goods .goods_info .goods_response {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.gallery .container .goods .goods_info .goods_response .stars {
+  margin-right: 15px;
+}
+
+.gallery .container .goods .goods_info .goods_response .stars .star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+  border-right: .3em solid transparent;
+  border-bottom: .7em solid #FC0;
+  border-left: .3em solid transparent;
+  font-size: 10px;
+}
+
+.gallery .container .goods .goods_info .goods_response .stars .star::before, .gallery .container .goods .goods_info .goods_response .stars .star::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: .6em;
+  left: -1em;
+  border-right: 1em solid transparent;
+  border-bottom: .7em solid #FC0;
+  border-left: 1em solid transparent;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+.gallery .container .goods .goods_info .goods_response .stars .star::after {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.gallery .container .goods .goods_info .goods_response p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.447);
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.gallery .container .goods .goods_info .goods_response p:hover {
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.gallery .container .goods .goods_info .goods_price span {
+  font-weight: 400;
+  color: rgba(69, 69, 69, 0.74);
+}
+
+.gallery .container .goods .goods_info .goods_price .goods_price_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.gallery .container .goods .goods_info .goods_price .goods_price_main p {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #d54418;
+  margin-right: 15px;
+}
+
+.gallery .container .goods .goods_info .goods_price .goods_price_main strong {
+  background-color: rgba(255, 204, 0, 0.521);
+  text-align: center;
+  height: 100%;
+  padding: 3px 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.gallery .container .goods .goods_info .goods_price s {
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: rgba(69, 69, 69, 0.74);
+}
+
+.gallery .container .goods .goods_buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.gallery .container .goods .goods_buy .buy {
+  font-family: Commissioner;
+  font-size: 26px;
+  line-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+  background: #26b22dbd;
+  padding: 14px 52px;
+  padding-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: 600;
+  border-radius: 40px;
+}
+
+.gallery .container .goods .goods_buy .buy:hover {
+  background: #d54418;
+}
+
+.gallery .container .goods .goods_buy .heart {
+  fill: #787878;
+  position: relative;
+  margin-left: 35px;
+  top: 5px;
+  width: 30px;
+  -webkit-animation: pulse 1s ease infinite;
+          animation: pulse 1s ease infinite;
+  cursor: pointer;
+}
+
+.gallery .container .goods .goods_buy .heart:hover {
+  fill: #d54418;
+}
+
+.gallery .container .goods .goods_buy .balance {
+  width: 35px;
+  margin-left: 35px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.gallery .container .goods .goods_buy .balance:hover {
+  width: 40px;
+}
+/*# sourceMappingURL=main.css.map */
